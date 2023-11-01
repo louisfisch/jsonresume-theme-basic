@@ -1,11 +1,11 @@
 services:
-    app:
-        build: .
-        container_name: jsonresume-theme-basic
-        ports:
-            - 4000:4000
-        restart: unless-stopped
-        tty: true
-        volumes:
-            - .:/app
-            - /app/node_modules
+  app:
+    build: .
+    container_name: jsonresume-theme-basic
+    ports:
+      - 4000:4000
+    restart: unless-stopped
+    tty: true
+    volumes:
+      - .:/app
+      - /app/node_modules
