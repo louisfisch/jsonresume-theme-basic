@@ -9,7 +9,7 @@ function render(resume) {
         });
     }
 
-    const template = fs.readFileSync('resume.hbs', 'utf-8');
+    const template = fs.readFileSync(__dirname + '/resume.hbs', 'utf-8');
 
     const html = handlebars.compile(template)({
         resume: resume
