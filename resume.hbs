@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -46,6 +46,10 @@
             /* Theme styles */
             body {
                 font: 14px "Helvetica Neue", Helvetica, sans-serif;
+            }
+
+            a:visited {
+                color: blue;
             }
 
             #resume {
@@ -388,7 +392,7 @@
                                 </div>
 
                                 {{#if score}}
-                                    <p class="score">Note obtenue: {{score}}</p>
+                                    <p class="score">Score: {{score}}</p>
                                 {{/if}}
 
                                 {{#if courses.length}}
