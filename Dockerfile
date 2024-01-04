@@ -2,7 +2,7 @@ FROM node:lts-bullseye-slim
 
 ENV RESUME_PUPPETEER_NO_SANDBOX true
 
-WORKDIR /app
+WORKDIR /usr/src/app
 
 RUN apt-get update && apt-get install -y \
     ca-certificates \
