@@ -2,6 +2,14 @@ const fs = require('fs');
 const handlebars = require('handlebars');
 const minify = require('html-minifier').minify;
 
+handlebars.registerHelper('displayUrl', function (url) {
+    if (!url) {
+        return '';
+    }
+
+    return String(url).replace(/^https?:\/\//i, '');
+});
+
 function render(resume) {
     if (typeof resume !== 'undefined') {
         resume.basics.profiles.forEach(profile => {

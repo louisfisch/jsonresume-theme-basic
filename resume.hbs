@@ -99,11 +99,16 @@
             #resume #profiles,
             #resume .description,
             #resume .item,
-            #resume .keywords,
-            #resume .score,
-            #resume .summary {
+            #resume .item-header,
+            #resume .score {
                 margin-top: 1em;
             }
+
+             #resume .description,
+             #resume .keywords,
+             #resume .summary {
+                margin-top: .5em;
+             }
 
             #resume #contact:first-child,
             #resume #location:first-child,
@@ -139,20 +144,22 @@
             }
 
             #resume .item-header {
-                align-items: first baseline;
                 display: flex;
-                justify-content: space-between;
+                flex-direction: column-reverse;
             }
 
             #resume .item-header .date {
-                padding-left: 1em;
                 white-space: nowrap;
+            }
+
+            #resume #work .item.same-company {
+                margin-top: 0.5em;
             }
 
             #resume ul.courses,
             #resume ul.highlights {
                 list-style-type: disc;
-                margin: 1em 3em 0;
+                margin: .5em 3em 0;
             }
 
             #resume #interests .items,
@@ -188,10 +195,6 @@
                 #resume .item-header {
                     display: flex;
                     flex-direction: column-reverse;
-                }
-
-                #resume .item-header .date {
-                    padding-left: 0;
                 }
 
                 #resume #interests .items,
@@ -245,7 +248,7 @@
                         {{#if url}}
                             <li class="url">
                                 <span class="fa fa-link"></span>
-                                <a href="{{url}}" target="_blank">{{url}}</a>
+                                <a href="{{url}}" target="_blank">{{displayUrl url}}</a>
                             </li>
                         {{/if}}
 
@@ -284,7 +287,7 @@
                                 <li>
                                     <span class="fa fa-{{network}}"></span>
                                     {{#if url}}
-                                        <a href="{{url}}" target="_blank">{{url}}</a>
+                                        <a href="{{url}}" target="_blank">{{displayUrl url}}</a>
                                     {{/if}}
 
                                     {{#if username}}
@@ -322,16 +325,21 @@
 
                     <div class="items">
                         {{#each resume.work}}
-                            <div class="item">
+                            <div class="item" data-company="{{name}}">
+                                <h3>
+                                    {{#if name}}
+                                        <span class="company-name">{{#if url}}<a href="{{url}}" target="_blank">{{/if}}{{name}}{{#if url}}</a>{{/if}}</span>
+                                    {{/if}}
+                                </h3>
+                            
+
+                                {{#if description}}
+                                    <p class="description">{{description}}</p>
+                                {{/if}}
+
                                 <div class="item-header">
                                     {{#if position}}
-                                        <h3 class="position">
-                                            {{#if name}}
-                                                {{#if url}}<a href="{{url}}" target="_blank">{{/if}}{{name}}{{#if url}}</a>{{/if}} -
-                                            {{/if}}
-
-                                            {{position}}
-                                        </h3>
+                                        <h3 class="position">{{position}}</h3>
                                     {{/if}}
 
                                     <p class="date">
@@ -345,10 +353,6 @@
                                     </p>
                                 </div>
 
-                                {{#if summary}}
-                                    <p class="summary">{{summary}}</p>
-                                {{/if}}
-
                                 {{#if highlights.length}}
                                     <ul class="highlights">
                                         {{#each highlights}}
@@ -359,6 +363,33 @@
                             </div>
                         {{/each}}
                     </div>
+                    <script>
+                        (function () {
+                            var items = document.querySelectorAll('#work .items > .item');
+                            var previousCompany = '';
+                            var i;
+
+                            for (i = 0; i < items.length; i++) {
+                                var item = items[i];
+                                var company = (item.getAttribute('data-company') || '').replace(/\s+/g, ' ').trim();
+                                var descriptionEl = item.querySelector('.description');
+
+                                if (company && company === previousCompany) {
+                                    item.classList.add('same-company');
+
+                                    var companyEl = item.querySelector('.company-name');
+                                    if (companyEl) {
+                                        var companyElParentNode = companyEl.parentNode;
+                                        
+                                        companyElParentNode.remove();
+                                        descriptionEl.remove();
+                                    }
+                                }
+
+                                previousCompany = company;
+                            }
+                        })();
+                    </script>
                 </section>
             {{/if}}
 
