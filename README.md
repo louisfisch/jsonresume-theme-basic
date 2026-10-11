@@ -4,9 +4,7 @@ Theme for JSON Resume. It is very basic and can therefore be used both as a them
 
 ## Preview
 
-<img src="https://github.com/user-attachments/assets/b849a352-675f-46a3-81ef-c3f543ca8f9b" alt="Example Resume - Page 1" width="200"/>
-<img src="https://github.com/user-attachments/assets/3ad18d6d-0170-4798-8dc7-bfa08fdbcac0" alt="Example Resume - Page 2" width="200"/>
-<img src="https://github.com/user-attachments/assets/853486a4-9fa1-4448-9ce7-b2ed06cdc5b2" alt="Example Resume - Page 3" width="200"/>
+<img alt="Example Resume - Page 1" src="https://i.imgur.com/BeiriUn.jpeg" width="200"/> <img alt="Example Resume - Page 2" src="https://i.imgur.com/KeYO1P3.jpeg" width="200"/> <img alt="Example Resume - Page 3" src="https://i.imgur.com/qc0BiSi.jpeg" width="200"/>
 
 ## Usage
 
