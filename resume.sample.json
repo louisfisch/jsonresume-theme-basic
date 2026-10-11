@@ -1,0 +1,341 @@
+{
+    "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+    "basics": {
+        "name": "John Doe",
+        "label": "Senior Full-Stack Engineer",
+        "image": "",
+        "email": "john.doe@example.com",
+        "phone": "+1 555-010-0123",
+        "url": "https://john-doe.example.com",
+        "summary": "Full-stack engineer with more than ten years of experience building and scaling web platforms. Passionate about clean APIs, accessible interfaces and mentoring junior developers. Comfortable moving between product discussions, system design and hands-on code.",
+        "location": {
+            "address": "123 Main Street",
+            "postalCode": "62704",
+            "city": "Springfield",
+            "countryCode": "US",
+            "region": "Illinois"
+        },
+        "profiles": [
+            {
+                "network": "LinkedIn",
+                "username": "john-doe",
+                "url": "https://linkedin.com/in/john-doe"
+            },
+            {
+                "network": "GitHub",
+                "username": "johndoe",
+                "url": "https://github.com/johndoe"
+            },
+            {
+                "network": "Stack Overflow",
+                "username": "johndoe",
+                "url": "https://stackoverflow.com/u/0000000"
+            }
+        ]
+    },
+    "work": [
+        {
+            "name": "Lumina Cloud",
+            "position": "Staff Software Engineer",
+            "url": "https://lumina-cloud.example.com",
+            "startDate": "2023-03-01",
+            "summary": "Lumina Cloud is a fictional developer platform that helps teams deploy, monitor and scale web applications across multiple regions.",
+            "highlights": [
+                "Led a team of 8 engineers rebuilding the deployment pipeline, cutting average release time from 45 to 9 minutes.",
+                "Designed a multi-region failover strategy that raised platform availability to 99.99%.",
+                "Introduced an internal RFC process adopted by all product teams.",
+                "Mentored 6 engineers, 3 of whom were promoted within 18 months.",
+                "Represented engineering in quarterly roadmap planning with Product and Design."
+            ]
+        },
+        {
+            "name": "Brightwave Studio",
+            "position": "Senior Software Engineer",
+            "url": "https://brightwave.example.com",
+            "startDate": "2019-09-01",
+            "endDate": "2023-02-28",
+            "summary": "Brightwave Studio is a fictional digital agency building web and mobile products for retail and media clients.",
+            "highlights": [
+                "Architected a headless e-commerce platform serving 2 million monthly visitors.",
+                "Migrated a legacy monolith to a service-oriented architecture with zero downtime.",
+                "Built a reusable component library used across 14 client projects."
+            ]
+        },
+        {
+            "name": "Papyrus Labs",
+            "position": "Software Engineer",
+            "url": "https://papyrus-labs.example.com",
+            "startDate": "2015-06-01",
+            "endDate": "2019-08-31",
+            "summary": "Papyrus Labs was a fictional start-up developing collaborative note-taking software for students and researchers.",
+            "highlights": [
+                "Developed the real-time collaboration engine using WebSockets and operational transforms.",
+                "Wrote the public REST API and its documentation.",
+                "Improved front-end performance, reducing initial load time by 60%."
+            ]
+        },
+        {
+            "name": "Northwind Interactive",
+            "position": "Junior Web Developer",
+            "url": "https://northwind-interactive.example.com",
+            "startDate": "2013-09-01",
+            "endDate": "2015-05-31",
+            "summary": "Northwind Interactive was a fictional small web agency.",
+            "highlights": [
+                "Built responsive marketing websites for small businesses.",
+                "Maintained and extended a custom content management system."
+            ]
+        }
+    ],
+    "volunteer": [
+        {
+            "organization": "Code for Everyone",
+            "position": "Coding Workshop Instructor",
+            "url": "https://code-for-everyone.example.org",
+            "startDate": "2018-01-01",
+            "summary": "Teaches introductory web development to adults changing careers, through free weekend workshops.",
+            "highlights": [
+                "Taught more than 120 learners across 20 workshops.",
+                "Created an open-source curriculum now reused by two other chapters."
+            ]
+        },
+        {
+            "organization": "Riverside Food Bank",
+            "position": "Volunteer Coordinator",
+            "url": "https://riverside-food-bank.example.org",
+            "startDate": "2014-03-01",
+            "endDate": "2016-12-31",
+            "summary": "Organized weekly volunteer shifts for food collection and distribution.",
+            "highlights": [
+                "Grew the volunteer pool from 15 to 60 people."
+            ]
+        }
+    ],
+    "education": [
+        {
+            "institution": "Lakeview State University",
+            "url": "https://lakeview-state.example.edu",
+            "area": "Computer Science",
+            "studyType": "Master",
+            "startDate": "2011-09-01",
+            "endDate": "2013-06-30",
+            "score": "3.8 / 4.0",
+            "courses": [
+                "CS501 - Distributed Systems",
+                "CS520 - Advanced Algorithms",
+                "CS545 - Human-Computer Interaction",
+                "CS580 - Machine Learning"
+            ]
+        },
+        {
+            "institution": "Lakeview State University",
+            "url": "https://lakeview-state.example.edu",
+            "area": "Mathematics and Computer Science",
+            "studyType": "Bachelor",
+            "startDate": "2008-09-01",
+            "endDate": "2011-06-30",
+            "score": "3.6 / 4.0",
+            "courses": [
+                "MA101 - Linear Algebra",
+                "MA210 - Probability and Statistics",
+                "CS101 - Introduction to Programming",
+                "CS220 - Data Structures"
+            ]
+        }
+    ],
+    "awards": [
+        {
+            "title": "Engineering Excellence Award",
+            "date": "2022-11-15",
+            "awarder": "Brightwave Studio",
+            "summary": "Recognized for leading the zero-downtime migration of the agency's largest client platform."
+        },
+        {
+            "title": "Best Paper, WebConf Europe",
+            "date": "2018-05-10",
+            "awarder": "WebConf Europe",
+            "summary": "Awarded for a talk on scalable real-time collaboration in the browser."
+        }
+    ],
+    "certificates": [
+        {
+            "name": "Certified Cloud Architect - Professional",
+            "date": "2024-02-20",
+            "issuer": "Cloud Institute",
+            "url": "https://cloud-institute.example.org/certificates/000001"
+        },
+        {
+            "name": "Professional Scrum Master I",
+            "date": "2020-06-12",
+            "issuer": "Agile Alliance",
+            "url": "https://agile-alliance.example.org/certificates/000002"
+        }
+    ],
+    "publications": [
+        {
+            "name": "Operational Transforms Without the Tears",
+            "publisher": "Journal of Web Engineering",
+            "releaseDate": "2019-04-02",
+            "url": "https://journal-of-web-engineering.example.org/articles/operational-transforms",
+            "summary": "An accessible introduction to operational transforms, with practical examples for building collaborative editors."
+        },
+        {
+            "name": "Designing APIs People Love",
+            "publisher": "Dev Weekly Magazine",
+            "releaseDate": "2021-09-14",
+            "url": "https://dev-weekly.example.com/designing-apis-people-love",
+            "summary": "A set of practical guidelines for naming, versioning and documenting public REST APIs."
+        }
+    ],
+    "skills": [
+        {
+            "name": "Languages",
+            "level": "Expert",
+            "keywords": [
+                "TypeScript",
+                "JavaScript",
+                "Python",
+                "Go",
+                "SQL"
+            ]
+        },
+        {
+            "name": "Frameworks",
+            "level": "Advanced",
+            "keywords": [
+                "React",
+                "Vue.js",
+                "Node.js",
+                "Django",
+                "Express"
+            ]
+        },
+        {
+            "name": "Databases",
+            "level": "Advanced",
+            "keywords": [
+                "PostgreSQL",
+                "MongoDB",
+                "Redis",
+                "Elasticsearch"
+            ]
+        },
+        {
+            "name": "DevOps",
+            "level": "Intermediate",
+            "keywords": [
+                "Docker",
+                "Kubernetes",
+                "Terraform",
+                "GitHub Actions",
+                "Grafana"
+            ]
+        },
+        {
+            "name": "Collaboration Tools",
+            "level": "",
+            "keywords": [
+                "Jira",
+                "Notion",
+                "Figma",
+                "Slack"
+            ]
+        }
+    ],
+    "languages": [
+        {
+            "language": "French",
+            "fluency": "Intermediate"
+        },
+        {
+            "language": "English",
+            "fluency": "Native speaker"
+        },
+        {
+            "language": "Spanish",
+            "fluency": "Intermediate"
+        },
+        {
+            "language": "Japanese",
+            "fluency": "Beginner"
+        }
+    ],
+    "interests": [
+        {
+            "name": "Outdoor Sports",
+            "keywords": [
+                "Hiking",
+                "Climbing",
+                "Trail running"
+            ]
+        },
+        {
+            "name": "Creative Hobbies",
+            "keywords": [
+                "Photography",
+                "Pottery"
+            ]
+        },
+        {
+            "name": "Board Games",
+            "keywords": []
+        },
+        {
+            "name": "Travel",
+            "keywords": []
+        }
+    ],
+    "references": [
+        {
+            "name": "Jordan Ellison",
+            "reference": "John is one of the most thoughtful engineers I have worked with. They combine deep technical skill with a rare ability to bring teams together, and they leave every project in better shape than they found it."
+        },
+        {
+            "name": "Priya Raman",
+            "reference": "I managed John for three years. They consistently delivered ambitious projects on time, and their mentoring made our whole department stronger."
+        }
+    ],
+    "projects": [
+        {
+            "name": "Foldr",
+            "description": "An open-source command-line tool that organizes messy download folders using customizable rules.",
+            "highlights": [
+                "More than 1,200 stars on GitHub",
+                "Used by contributors from 30 countries"
+            ],
+            "keywords": [
+                "Go",
+                "CLI",
+                "Open source"
+            ],
+            "startDate": "2020-02-01",
+            "url": "https://github.com/johndoe/foldr",
+            "roles": [
+                "Creator",
+                "Maintainer"
+            ],
+            "entity": "Personal project",
+            "type": "application"
+        },
+        {
+            "name": "Meridian Docs",
+            "description": "A static documentation generator with built-in search and versioning, built for small open-source projects.",
+            "highlights": [
+                "Powers the documentation of 40+ projects"
+            ],
+            "keywords": [
+                "TypeScript",
+                "Static site generator",
+                "Documentation"
+            ],
+            "startDate": "2021-06-01",
+            "endDate": "2023-12-31",
+            "url": "https://github.com/johndoe/meridian-docs",
+            "roles": [
+                "Lead developer"
+            ],
+            "entity": "Open-source community",
+            "type": "library"
+        }
+    ]
+}

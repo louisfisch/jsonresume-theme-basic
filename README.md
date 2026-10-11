@@ -1,10 +1,12 @@
-# Basic theme for JSON Resume
+# Description
 
-Basic theme for JSON Resume is very... basic. It can therefore be used both as a theme and boilerplate. The theme covers every single key of the [JSON Resume schema](https://github.com/jsonresume/resume-schema).
+Theme for JSON Resume. It is very basic and can therefore be used both as a theme and boilerplate. The theme covers every single key of the JSON Resume schema](https://github.com/jsonresume/jsonresume.org/tree/master/packages/schema).
 
 ## Preview
 
-![Louis Fischer Resume](https://github.com/louisfisch/jsonresume-theme-basic/assets/9432699/2657cd2e-72e8-432c-9820-6dab39e611f5)
+<img src="https://github.com/user-attachments/assets/b849a352-675f-46a3-81ef-c3f543ca8f9b" alt="Example Resume - Page 1" width="200"/>
+<img src="https://github.com/user-attachments/assets/3ad18d6d-0170-4798-8dc7-bfa08fdbcac0" alt="Example Resume - Page 2" width="200"/>
+<img src="https://github.com/user-attachments/assets/853486a4-9fa1-4448-9ce7-b2ed06cdc5b2" alt="Example Resume - Page 3" width="200"/>
 
 ## Usage
 
@@ -38,7 +40,7 @@ Basic theme for JSON Resume is very... basic. It can therefore be used both as a
 
 4. Serve your resume using Basic theme
 
-        docker exec jsonresume-theme-basic node_modules/.bin/resume serve -t .
+        docker exec json-resume-theme-basic-nodejs resume serve -t .
 
 #### Using your own environment
 

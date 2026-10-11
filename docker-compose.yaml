@@ -1,9 +1,9 @@
 services:
   nodejs:
     build: .
-    container_name: nodejs
+    container_name: json-resume-theme-basic-nodejs
     ports:
-      - 4000:4000
+      - 4001:4001
     restart: unless-stopped
     tty: true
     volumes:
