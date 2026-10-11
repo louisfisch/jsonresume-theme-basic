@@ -1,6 +1,6 @@
 # Description
 
-Theme for JSON Resume. It is very basic and can therefore be used both as a theme and boilerplate. The theme covers every single key of the JSON Resume schema](https://github.com/jsonresume/jsonresume.org/tree/master/packages/schema).
+Theme for JSON Resume. It is very basic and can therefore be used both as a theme and boilerplate. The theme covers every single key of the [JSON Resume schema](https://github.com/jsonresume/jsonresume.org/tree/master/packages/schema).
 
 ## Preview
 
